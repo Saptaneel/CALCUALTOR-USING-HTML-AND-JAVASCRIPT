@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saptaneel's Calculator</title>
+</head>
+<h1>Calculator</h1>
+<style>
+  
+  h1{
+    color: black;
+    text-align: center;
+  }
+  .one{
+    font-size: 30;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    
+    
+    
+  }
+  .two{
+    font-size: 30;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    
+    
+  }
+  #id1{
+    height: 25px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  #id2{
+    height: 25px;
+    width: 300px;
+    display: block;
+    margin: auto;
+  }
+  
+  #p1{
+     
+     font-size: 30;
+     color: black;
+     text-align: center;
+  }
+  button{
+    display: block;
+    margin: auto;
+    margin-top: 13px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+     
+   
+</style>
+<script>
+  function add()
+  {
+    var a=parseInt(document.getElementById("id1").value);
+    var b=parseInt(document.getElementById("id2").value);
+    var z=a+b;
+    document.getElementById("p1").innerHTML=z;
+  }
+  function sub()
+  {
+    var a=parseInt(document.getElementById("id1").value);
+    var b=parseInt(document.getElementById("id2").value);
+    var x=a-b;
+    document.getElementById("p1").innerHTML=x;
+  }
+  function mul()
+  {
+    var a=parseInt(document.getElementById("id1").value);
+    var b=parseInt(document.getElementById("id2").value);
+    var y=a*b;
+    document.getElementById("p1").innerHTML=y;
+  }
+  function div()
+  {
+    var a=parseInt(document.getElementById("id1").value);
+    var b=parseInt(document.getElementById("id2").value);
+    var d=a/b;
+    document.getElementById("p1").innerHTML=d;
+  }
+
+  
+</script>
+<body>
+  
+  
+ <p class="one">Enter First Number &nbsp;</p>
+ 
+ <input id="id1" placeholder="Enter Any Number" type="text">
+   
+ 
+ <p class="two">Enter Second Number &nbsp;</p>
+ 
+ <input id="id2" placeholder="Enter Any Number" type="text">
+
+ <button class="a" onclick="add() ">ADD</button>&nbsp;&nbsp;&nbsp;&nbsp;
+ <button onclick="sub() ">SUBTRACT</button>&nbsp;&nbsp;&nbsp;&nbsp;
+ <button onclick="mul() ">MULTIPLY</button>&nbsp;&nbsp;&nbsp;&nbsp;
+ <button onclick="div() ">DIVIDE</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+ <p id="p1">Answer</p>
+</body>
+
+
+</html>
